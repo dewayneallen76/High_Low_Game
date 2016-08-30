@@ -24,7 +24,7 @@ do {
 	echo "Higher" .PHP_EOL;
 	} else if($userGuess == $randomNumber) {
 	echo "Good guess! The number is $randomNumber!" .PHP_EOL;
-	echo "Way to go it only took you $numberOfTries tries to get it!" .PHP_EOL;
+	echo "Way to go it only took you $numberOfTries guesses to get it!" .PHP_EOL;
 	} 
 } 
 while($userGuess != $randomNumber); 
