@@ -3,10 +3,11 @@
 echo "----------------------------------------------------" .PHP_EOL;
 echo "-------------WELCOME TO MY HIGH/LOW GAME------------" .PHP_EOL;
 echo "----------------------------------------------------" .PHP_EOL;
-echo "A random number will be generated between 1 and 100 " .PHP_EOL;
-echo "You try to guess the number. Based on your response " .PHP_EOL;
-echo "you will be told if the number is HIGHER or LOWER.  " .PHP_EOL;
-echo "Keep entering a number until you get the right one! " .PHP_EOL;
+echo "Enter a minimum and maximum number." .PHP_EOL;
+echo "The computer will generate a random number from your input." .PHP_EOL;
+echo "Try to guess the number." .PHP_EOL;
+echo "You will be given hints HIGHER or LOWER." .PHP_EOL;
+echo "See how fast you can do it!" .PHP_EOL;
 echo "Enter 0 to exit game, if you are a quitter."		    .PHP_EOL;
 echo "----------------------------------------------------" .PHP_EOL; 
 // ASKS PLAYER FOR FIRST NAME 
@@ -57,7 +58,29 @@ do {
 while($userGuess != $randomNumber); 
 
 
-		
+echo "               .------..                            _------__--___.__.
+            /            \_                       /            `  `    \
+          /                \                     |.                     \
+         /                   \                   \                       |
+        /    .--._    .---.   |                   \                      |
+        |  /      -__-     \   |                    ~-/--`-`-`-\         |
+        | |                |  |                     |          \        |
+         ||                  ||                     |            |       |
+         ||     ,_   _.      ||                     |            |       |
+         ||      e   e      ||  Hey Beavis,         |   _--    |       |
+          ||     _  |_      ||   pull my finger!     _| =-.    |.-.    |
+         @|     (o\_/o)     |@   Heh,Heh!!!          o|/o/       _.   |
+           |     _____     |                        /  ~          \ |
+            \ ( /uuuuu\ ) /             No way!    (/___@)  ___~    |
+             \  `====='  /              Ass wipe!!    |_===~~~.`    |
+              \  -___-  /                         _______.--~     |
+               |       |            //             \________       |
+               /-_____-\       .  _//_                      \      |
+             /           \     \\/////                    __/-___-- -_
+           /               \    \   /                    /            __\
+          /__|  AC / DC  |__\   / /                      -| Metallica|| |
+          | ||           |\ \  / /                       ||          || |
+          | ||           | \ \/ /                        ||          || |	" .PHP_EOL;
 
 
 
