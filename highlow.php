@@ -1,7 +1,7 @@
 <?php 
 // INSTRUCTIONS
 echo "----------------------------------------------------" .PHP_EOL;
-echo "-------------WELCOME TO MY HIGH/LOW GAME-------------" .PHP_EOL;
+echo "-------------WELCOME TO MY HIGH/LOW GAME------------" .PHP_EOL;
 echo "----------------------------------------------------" .PHP_EOL;
 echo "A random number will be generated between 1 and 100 " .PHP_EOL;
 echo "You try to guess the number. Based on your response " .PHP_EOL;
