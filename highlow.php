@@ -13,11 +13,15 @@ echo "----------------------------------------------------" .PHP_EOL;
 fwrite(STDOUT, 'What is your first name? ');
 $firstName = trim(fgets(STDIN));
 fwrite(STDOUT, "Hello $firstName! Lets play! ".PHP_EOL);
+fwrite(STDOUT, "Enter a minimum number: ".PHP_EOL);
+$min = trim(fgets(STDIN));
+fwrite(STDOUT, "Enter a maximum number: ".PHP_EOL);
+$max = trim(fgets(STDIN));
 
 // SETUP SO THAT ARGUMENTS CAN BE PASSED TO CHANGE THE MINIMUM AND MAXIMUM NUMBER. IF NO ARGUMENTS ARE PASSED IT WILL STILL CREATE A RANDOM NUMBER BETWEEN 1 AND 100. 
 // VARIABLES FOR MINIMUM AND MAXIMUM NUMBER 
-$min = 1;
-$max = 100;
+// $min = 1;
+// $max = 100;
 
 if(isset($argv[1])) {
 	$min = $argv[1];
