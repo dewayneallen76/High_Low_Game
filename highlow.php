@@ -1,5 +1,5 @@
 <?php 
-// INSTRUCTIONS 
+// INSTRUCTIONS
 echo "----------------------------------------------------" .PHP_EOL;
 echo "-------------WELOME TO MY HIGH/LOW GAME-------------" .PHP_EOL;
 echo "----------------------------------------------------" .PHP_EOL;
@@ -11,20 +11,23 @@ echo "Use CTRL-C to exit game, if you are a quitter."		.PHP_EOL;
 echo "----------------------------------------------------" .PHP_EOL; 
 
 $randomNumber = mt_rand(1,100); // RANDOM NUMBER GENERATOR BETWEEN 1 AND 100
+$numberOfTries = 0; // COUNTER TO KEEP TRACK OF THE NUMBER OF TIMES USER GUESSED
 fwrite(STDOUT, 'Guess a number between 1 and 100: ') .PHP_EOL;
 
 do {
+	$numberOfTries += 1;
 	echo "Guess? ";
 	$userGuess = trim(fgets(STDIN));
-	// $numberOfTries = array($userGuess);
 	if($userGuess > $randomNumber) {
 	echo "Lower".PHP_EOL;
 	} else if($userGuess < $randomNumber) {
 	echo "Higher" .PHP_EOL;
 	} else if($userGuess == $randomNumber) {
 	echo "Good guess! The number is $randomNumber!" .PHP_EOL;
+	echo "Way to go it only took you $numberOfTries tries to get it!" .PHP_EOL;
 	} 
-} while($userGuess != $randomNumber);
+} 
+while($userGuess != $randomNumber); 
 
 
 		
